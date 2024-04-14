@@ -10,37 +10,38 @@ import appstore from '@/assets/navbar/appstore.svg'
 const Navbar = () => {
   const [selectedColor, setSelectedColor] = React.useState("default")
 
-  const variants = ["Get App"];
-  const DropdownContent = ({variant, color}:{variant:any, color:any}) => (
-    <Dropdown shouldBlockScroll={false}>
+
+  const DropdownContent = () => (
+    <Dropdown className="bg-purple-700" shouldBlockScroll={false}>
       <DropdownTrigger>
-        <Button
-          color={color}
-          variant={variant}
-          className="capitalizepx-4 py-2 rounded-xl bg-purple-700 text-white "
+        <Button className='w-40 border-1 text-white bg-purple-700'
+
         >
-          {variant}
+          Get App
         </Button>
       </DropdownTrigger>
       <DropdownMenu
-        aria-label="Dropdown Variants" className="text-black"
-        
+        aria-label="Dropdown Variants"
+        color={"secondary"}
+        variant={"faded"}
+        className="   rounded-xl text-white capitalize w-40 hover:bg-black "
+
       >
-        <DropdownItem  key="new">
-          <div className="flex space-x-1 gap-3 mt-2">
-          <Image src={playstore} height={30} width={30} alt='playstore logo'/>
-          <div>Play Store</div>
+        <DropdownItem >
+          <div className="flex space-x-1 gap-2 mt-2">
+            <Image src={playstore} height={30} width={30} alt='playstore logo' />
+            <div>Play Store</div>
           </div>
-          
+
         </DropdownItem>
-        <DropdownItem  key="copy">
-        <div className="flex space-x-2 gap-3 mt-2">
-          <Image src={appstore} height={30} width={30} alt='playstore logo'/>
-          <div>App Store</div>
+        <DropdownItem >
+          <div className="flex space-x-1 gap-3 mt-2">
+            <Image src={appstore} height={30} width={30} alt='playstore logo' />
+            <div>App Store</div>
           </div>
-        
-          </DropdownItem>
-       
+
+        </DropdownItem>
+
       </DropdownMenu>
     </Dropdown>
   )
@@ -56,10 +57,10 @@ const Navbar = () => {
           <button className="px-4 py-2 rounded">Competitions</button>
           <button className="px-4 py-2 rounded-xl bg-white text-purple-600">Log In</button>
           <div>
-            <div className="flex flex-wrap gap-4">
-              {variants.map((variant) => (
-                <DropdownContent key={variant} color={selectedColor} variant={variant} />
-              ))}
+            <div className=" ">
+
+              <DropdownContent />
+
               <RadioGroup
 
                 orientation="horizontal"
@@ -96,7 +97,7 @@ export default Navbar;
 
 /* White background */
 
-// box-sizing: border-box;
+//
 
 // position: absolute;
 // width: 1439px;

@@ -1,5 +1,5 @@
 "use client"
-import Auth from '@/components/signup'
+import Auth from '@/app/login/signup'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
 import { NextUIProvider } from "@nextui-org/react";

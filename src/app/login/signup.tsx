@@ -3,7 +3,6 @@ import Image from 'next/image';
 import google from '@/assets/navbar/google.svg'
 import Link from 'next/link';
 import apple from '@/assets/navbar/apple.svg'
-import background from '@/assets/navbar/background.svg'
 import frame from '@/assets/navbar/imgframe.svg'
 
 
@@ -11,7 +10,7 @@ const Auth = () => {
   return (
     <div className="  h-screen w-full">
      
-      <div className="flex justify-center items-center w-full h-full pl-[300px] ">
+      <div className="flex justify-center items-center w-full h-full pl-[200px] ">
         <div >
             <Image src={frame} height={469} width={642} alt='frame'/>
             </div>
