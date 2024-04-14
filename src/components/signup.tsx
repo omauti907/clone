@@ -4,17 +4,20 @@ import google from '@/assets/navbar/google.svg'
 import Link from 'next/link';
 import apple from '@/assets/navbar/apple.svg'
 import background from '@/assets/navbar/background.svg'
+import frame from '@/assets/navbar/imgframe.svg'
 
 
 const Auth = () => {
   return (
     <div className="  h-screen w-full">
-      <Image src={background} height={100} width={100} className=" absolute top-0 left-0" alt='background' />
-      <div className="flex p-10 gap-8 ">
-        <div className='mt-10 flex-1 h-[200px] w-[200] '>
-            
+     
+      <div className="flex justify-center items-center w-full h-full pl-[300px] ">
+        <div >
+            <Image src={frame} height={469} width={642} alt='frame'/>
             </div>
-        <div className='flex-1 flex justify-center items-center flex-col gap-5 mt-10 mb-10'>
+            
+        <div className='flex-1 flex justify-center items-center flex-col gap-5  w-full h-full'>
+          
           <h1 className="text-4xl text-left font-bold ">Sign up / Register</h1>
           <button className="bg-black hover:bg-gray-700 text-white p-3 w-80 rounded-xl border border-gray-500" >
             <div className='flex space-x-1 gap-6 justify-center'>
