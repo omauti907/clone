@@ -46,7 +46,7 @@ const Navbar = () => {
     </Dropdown>
   )
   return (
-    <nav className=" text-white p-1 border-b border-gray-600 rounded-md">
+    <nav className=" text-white p-1 border-b border-gray-600 rounded-md sticky top-0 ">
       <div className="flex justify-between items-center" style={{
         background: "rgba(62, 56, 56, 0.1)"
       }}>
@@ -95,20 +95,3 @@ export default Navbar;
 
 
 
-/* White background */
-
-//
-
-// position: absolute;
-// width: 1439px;
-// height: 80px;
-// left: 0px;
-// top: 0px;
-
-// /* Card Color */
-
-// /* Card Stroke */
-// border: 1px solid rgba(255, 255, 255, 0.1);
-// backdrop-filter: blur(52.5px);
-// /* Note: backdrop-filter has minimal browser support */
-// border-radius: 6px;

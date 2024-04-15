@@ -34,13 +34,11 @@ const Auth = () => {
               </div>
             </div>
           </button>
-          <div className="mt-4 text-gray-500 text-center">
-            Already have an account?{' '}
-            <Link href="/login" className="text-blue-500 hover:underline">Log in here</Link>
+          
           </div>
         </div>
       </div>
-    </div>
+  
   );
 };
 

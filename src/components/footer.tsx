@@ -9,35 +9,35 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <Image src={rffooter} height={300} width={300} alt="Footer Logo" /> {/* Center image on smaller screens */}
           </div>
-          <div className='grid md:grid-cols-3 gap-1 py-1 mt-10 ml-20'>
+          <div className='grid md:grid-cols-3 gap-1 py-1 mt-10 ml-20 group '>
           <div className="text-center md:text-left"> 
             <h2 className="text-xl font-bold mb-6">Product</h2>
-            <ul className="list-unstyled">
-              <li><button>Overview</button></li>
-              <li><button>Features</button></li>
-              <li><button>Pricing</button></li>
-              <li><button>Releases</button></li>
-              <li><button>Licenses</button></li>
+            <ul className="list-unstyled ">
+              <li><button className='hover:text-purple-400' >Overview</button ></li>
+              <li><button className='hover:text-purple-400'>Features</button ></li>
+              <li><button className='hover:text-purple-400'>Pricing</button ></li>
+              <li><button className='hover:text-purple-400'>Releases</button ></li>
+              <li><button className='hover:text-purple-400'>Licenses</button ></li>
             </ul>
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-xl font-bold mb-6">Social</h2>
             <ul className="list-unstyled">
-              <li><button>Twitter</button></li>
-              <li><button>Facebook</button></li>
-              <li><button>LinkedIn</button></li>
-              <li><button>Dribbble</button></li>
-              <li><button>AngelList</button></li>
+              <li><button className='hover:text-purple-400'>Twitter</button ></li>
+              <li><button className='hover:text-purple-400'>Facebook</button ></li>
+              <li><button className='hover:text-purple-400'>LinkedIn</button ></li>
+              <li><button className='hover:text-purple-400'>Dribbble</button ></li>
+              <li><button className='hover:text-purple-400'>AngelList</button ></li>
             </ul>
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-xl font-bold mb-6">Legal</h2>
             <ul className="list-unstyled">
-              <li><button>Terms</button></li>
-              <li><button>Privacy</button></li>
-              <li><button>Cookies</button></li>
-              <li><button>Settings</button></li>
-              <li><button>Contact</button></li>
+              <li><button className='hover:text-purple-400'>Terms</button ></li>
+              <li><button className='hover:text-purple-400'>Privacy</button ></li>
+              <li><button className='hover:text-purple-400'>Cookies</button ></li>
+              <li><button className='hover:text-purple-400'>Settings</button ></li>
+              <li><button className='hover:text-purple-400'>Contact</button ></li>
             </ul>
           </div>
           </div>
